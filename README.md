@@ -22,3 +22,22 @@
 ```bash
 cd frontend && npm install && npm run dev
 ```
+
+## 性能基线
+
+构建和本地开发共用同一份固定参数与门槛：
+
+- 固定参数：`frontend/performance/baseline-cases.json`
+- 共享门槛：`frontend/performance/performance-thresholds.json`
+- 本地最近一次测量结果：`frontend/performance/.last-baseline.json`（自动生成，不提交）
+
+本地运行：
+
+```bash
+cd frontend
+npm run perf:baseline
+```
+
+`npm run build` 会先执行同一个性能基线脚本；任一参数组的准备、图案生成、SVG 序列化或总耗时超过门槛，构建会失败并输出对应的参数组、步骤和实际耗时。每次运行会对每组参数预热 3 次并采样 9 次，输出中位数，同时把每一步与门槛、上一次本地基线的差异打印出来。最近一次测量结果会保存到本地供下一次复用。
+
+新增或删除参数组合后，需要同步修改 `baseline-cases.json` 和 `performance-thresholds.json`。每种图案都必须有 `low`、`medium`、`high` 三档，门槛值必须是大于 0 的毫秒数字；配置缺失或非法时脚本会列出原因并终止，不会静默跳过。

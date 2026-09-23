@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "description": "构建与本地 perf:baseline 共用的性能门槛，单位毫秒",
+  "thresholds": {
+    "spiral-low": {
+      "prepare": 0.1,
+      "generate": 3,
+      "serialize": 1,
+      "total": 5
+    },
+    "spiral-medium": {
+      "prepare": 0.1,
+      "generate": 8,
+      "serialize": 2,
+      "total": 12
+    },
+    "spiral-high": {
+      "prepare": 0.1,
+      "generate": 20,
+      "serialize": 5,
+      "total": 30
+    },
+    "fractal-low": {
+      "prepare": 0.1,
+      "generate": 3,
+      "serialize": 1,
+      "total": 5
+    },
+    "fractal-medium": {
+      "prepare": 0.1,
+      "generate": 8,
+      "serialize": 2,
+      "total": 12
+    },
+    "fractal-high": {
+      "prepare": 0.1,
+      "generate": 20,
+      "serialize": 5,
+      "total": 30
+    },
+    "wave-low": {
+      "prepare": 0.1,
+      "generate": 3,
+      "serialize": 1,
+      "total": 5
+    },
+    "wave-medium": {
+      "prepare": 0.1,
+      "generate": 8,
+      "serialize": 2,
+      "total": 12
+    },
+    "wave-high": {
+      "prepare": 0.1,
+      "generate": 20,
+      "serialize": 5,
+      "total": 30
+    },
+    "circles-low": {
+      "prepare": 0.1,
+      "generate": 3,
+      "serialize": 1,
+      "total": 5
+    },
+    "circles-medium": {
+      "prepare": 0.1,
+      "generate": 8,
+      "serialize": 2,
+      "total": 12
+    },
+    "circles-high": {
+      "prepare": 0.1,
+      "generate": 20,
+      "serialize": 5,
+      "total": 30
+    },
+    "noise-low": {
+      "prepare": 0.1,
+      "generate": 3,
+      "serialize": 1,
+      "total": 5
+    },
+    "noise-medium": {
+      "prepare": 0.1,
+      "generate": 8,
+      "serialize": 2,
+      "total": 12
+    },
+    "noise-high": {
+      "prepare": 0.1,
+      "generate": 20,
+      "serialize": 5,
+      "total": 30
+    }
+  }
+}

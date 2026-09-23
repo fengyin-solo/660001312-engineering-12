@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "description": "性能基线固定参数：每种图案覆盖低、中、高三档复杂度",
+  "defaults": {
+    "seed": 42,
+    "rotation": 0,
+    "strokeWidth": 1.5,
+    "opacity": 0.8,
+    "bgColor": "#030712",
+    "palette": ["#ff6b35", "#f7c59f", "#efefd0", "#004e89", "#1a659e"],
+    "width": 800,
+    "height": 1000
+  },
+  "cases": [
+    {
+      "id": "spiral-low",
+      "label": "螺旋 / 低",
+      "pattern": "spiral",
+      "level": "low",
+      "iterations": 50,
+      "scale": 0.5
+    },
+    {
+      "id": "spiral-medium",
+      "label": "螺旋 / 中",
+      "pattern": "spiral",
+      "level": "medium",
+      "iterations": 200,
+      "scale": 1
+    },
+    {
+      "id": "spiral-high",
+      "label": "螺旋 / 高",
+      "pattern": "spiral",
+      "level": "high",
+      "iterations": 500,
+      "scale": 2
+    },
+    {
+      "id": "fractal-low",
+      "label": "分形树 / 低",
+      "pattern": "fractal",
+      "level": "low",
+      "iterations": 25,
+      "scale": 0.5
+    },
+    {
+      "id": "fractal-medium",
+      "label": "分形树 / 中",
+      "pattern": "fractal",
+      "level": "medium",
+      "iterations": 100,
+      "scale": 1
+    },
+    {
+      "id": "fractal-high",
+      "label": "分形树 / 高",
+      "pattern": "fractal",
+      "level": "high",
+      "iterations": 400,
+      "scale": 2
+    },
+    {
+      "id": "wave-low",
+      "label": "波浪 / 低",
+      "pattern": "wave",
+      "level": "low",
+      "iterations": 20,
+      "scale": 0.5
+    },
+    {
+      "id": "wave-medium",
+      "label": "波浪 / 中",
+      "pattern": "wave",
+      "level": "medium",
+      "iterations": 100,
+      "scale": 1
+    },
+    {
+      "id": "wave-high",
+      "label": "波浪 / 高",
+      "pattern": "wave",
+      "level": "high",
+      "iterations": 500,
+      "scale": 2
+    },
+    {
+      "id": "circles-low",
+      "label": "圆环 / 低",
+      "pattern": "circles",
+      "level": "low",
+      "iterations": 50,
+      "scale": 0.5
+    },
+    {
+      "id": "circles-medium",
+      "label": "圆环 / 中",
+      "pattern": "circles",
+      "level": "medium",
+      "iterations": 200,
+      "scale": 1
+    },
+    {
+      "id": "circles-high",
+      "label": "圆环 / 高",
+      "pattern": "circles",
+      "level": "high",
+      "iterations": 500,
+      "scale": 2
+    },
+    {
+      "id": "noise-low",
+      "label": "噪声场 / 低",
+      "pattern": "noise",
+      "level": "low",
+      "iterations": 50,
+      "scale": 0.5
+    },
+    {
+      "id": "noise-medium",
+      "label": "噪声场 / 中",
+      "pattern": "noise",
+      "level": "medium",
+      "iterations": 200,
+      "scale": 1
+    },
+    {
+      "id": "noise-high",
+      "label": "噪声场 / 高",
+      "pattern": "noise",
+      "level": "high",
+      "iterations": 500,
+      "scale": 2
+    }
+  ]
+}
