@@ -1,0 +1,188 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-23T11:04:00.184Z",
+  "note": "性能门槛（毫秒，单次生成中位数）。构建与本地开发共用本文件；npm run perf:update 会用实测中位数重写 thresholds。本地历史结果见 perf/.last-run.json（不入库）。",
+  "defaults": {
+    "width": 800,
+    "height": 1000,
+    "seed": 42,
+    "theme": "sunset",
+    "strokeWidth": 1.5,
+    "opacity": 0.8,
+    "bgColor": "#030712",
+    "rotation": 0
+  },
+  "measurement": {
+    "warmupRuns": 5,
+    "measuredRuns": 25,
+    "thresholdMarginRatio": 0.5,
+    "minThresholdMs": 0.2
+  },
+  "cases": [
+    {
+      "pattern": "spiral",
+      "tier": "low",
+      "iterations": 50,
+      "scale": 0.5,
+      "thresholds": {
+        "generateMs": 0.2,
+        "wrapMs": 0.2,
+        "totalMs": 0.2
+      }
+    },
+    {
+      "pattern": "spiral",
+      "tier": "mid",
+      "iterations": 250,
+      "scale": 1,
+      "thresholds": {
+        "generateMs": 0.314,
+        "wrapMs": 0.2,
+        "totalMs": 0.314
+      }
+    },
+    {
+      "pattern": "spiral",
+      "tier": "high",
+      "iterations": 500,
+      "scale": 3,
+      "thresholds": {
+        "generateMs": 0.637,
+        "wrapMs": 0.2,
+        "totalMs": 0.638
+      }
+    },
+    {
+      "pattern": "fractal",
+      "tier": "low",
+      "iterations": 30,
+      "scale": 0.5,
+      "thresholds": {
+        "generateMs": 0.2,
+        "wrapMs": 0.2,
+        "totalMs": 0.2
+      }
+    },
+    {
+      "pattern": "fractal",
+      "tier": "mid",
+      "iterations": 150,
+      "scale": 1,
+      "thresholds": {
+        "generateMs": 0.2,
+        "wrapMs": 0.2,
+        "totalMs": 0.2
+      }
+    },
+    {
+      "pattern": "fractal",
+      "tier": "high",
+      "iterations": 500,
+      "scale": 3,
+      "thresholds": {
+        "generateMs": 0.2,
+        "wrapMs": 0.2,
+        "totalMs": 0.2
+      }
+    },
+    {
+      "pattern": "wave",
+      "tier": "low",
+      "iterations": 20,
+      "scale": 0.5,
+      "thresholds": {
+        "generateMs": 0.2,
+        "wrapMs": 0.2,
+        "totalMs": 0.2
+      }
+    },
+    {
+      "pattern": "wave",
+      "tier": "mid",
+      "iterations": 100,
+      "scale": 1,
+      "thresholds": {
+        "generateMs": 0.293,
+        "wrapMs": 0.2,
+        "totalMs": 0.293
+      }
+    },
+    {
+      "pattern": "wave",
+      "tier": "high",
+      "iterations": 500,
+      "scale": 3,
+      "thresholds": {
+        "generateMs": 0.586,
+        "wrapMs": 0.2,
+        "totalMs": 0.587
+      }
+    },
+    {
+      "pattern": "circles",
+      "tier": "low",
+      "iterations": 50,
+      "scale": 0.5,
+      "thresholds": {
+        "generateMs": 0.2,
+        "wrapMs": 0.2,
+        "totalMs": 0.2
+      }
+    },
+    {
+      "pattern": "circles",
+      "tier": "mid",
+      "iterations": 250,
+      "scale": 1,
+      "thresholds": {
+        "generateMs": 0.2,
+        "wrapMs": 0.2,
+        "totalMs": 0.2
+      }
+    },
+    {
+      "pattern": "circles",
+      "tier": "high",
+      "iterations": 500,
+      "scale": 3,
+      "thresholds": {
+        "generateMs": 0.2,
+        "wrapMs": 0.2,
+        "totalMs": 0.2
+      }
+    },
+    {
+      "pattern": "noise",
+      "tier": "low",
+      "iterations": 50,
+      "scale": 0.5,
+      "thresholds": {
+        "generateMs": 0.2,
+        "wrapMs": 0.2,
+        "totalMs": 0.2
+      }
+    },
+    {
+      "pattern": "noise",
+      "tier": "mid",
+      "iterations": 250,
+      "scale": 1.5,
+      "thresholds": {
+        "generateMs": 0.558,
+        "wrapMs": 0.2,
+        "totalMs": 0.559
+      }
+    },
+    {
+      "pattern": "noise",
+      "tier": "high",
+      "iterations": 500,
+      "scale": 3,
+      "thresholds": {
+        "generateMs": 5.595,
+        "wrapMs": 0.2,
+        "totalMs": 5.595
+      }
+    }
+  ]
+}
